@@ -229,7 +229,7 @@ public class CordovaLocationServices extends CordovaPlugin implements
             (loc.hasBearing() ? (loc.hasSpeed() ? loc.getBearing()
             : null) : null));
             o.put("altitudeAccuracy",
-            (loc.hasVerticalAccuracy() ? loc.getVerticalAccuracyMeters() : 'pas def'));
+            (loc.hasVerticalAccuracy() ? loc.getVerticalAccuracyMeters() : "pas def"));
             o.put("velocity", loc.getSpeed());
             o.put("timestamp", loc.getTime());
         } catch (JSONException e) {
